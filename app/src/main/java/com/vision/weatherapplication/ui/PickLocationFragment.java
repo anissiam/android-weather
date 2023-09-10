@@ -15,6 +15,7 @@ import com.vision.weatherapplication.api.ApiClient;
 import com.vision.weatherapplication.api.Apinterface;
 import com.vision.weatherapplication.databinding.FragmentPickLocationBinding;
 import com.vision.weatherapplication.model.WeatherModel;
+import com.vision.weatherapplication.utils.Constants;
 
 import retrofit2.Call;
 import retrofit2.Callback;

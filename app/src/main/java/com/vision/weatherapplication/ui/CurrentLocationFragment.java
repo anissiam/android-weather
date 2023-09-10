@@ -15,6 +15,7 @@ import com.vision.weatherapplication.api.Apinterface;
 import com.vision.weatherapplication.api.ApiClient;
 import com.vision.weatherapplication.databinding.FragmentCurrentLocationBinding;
 import com.vision.weatherapplication.model.WeatherModel;
+import com.vision.weatherapplication.utils.Constants;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,7 +47,7 @@ public class CurrentLocationFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Apinterface apInterface = ApiClient.getApiClient().create(Apinterface.class);
+        /*Apinterface apInterface = ApiClient.getApiClient().create(Apinterface.class);
         Call<WeatherModel> call = apInterface.getWeatherDataByLanLang(31.2708465, 34.2583693);
         call.enqueue(new Callback<WeatherModel>() {
             @Override
@@ -67,7 +68,7 @@ public class CurrentLocationFragment extends Fragment {
                 Log.d("TAG", t.getMessage());
 
             }
-        });
+        });*/
 
     }
 
